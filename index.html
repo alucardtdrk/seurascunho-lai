@@ -865,10 +865,6 @@ h1 {
   font-size: 12px;
   line-height: 1.55;
   margin-top: 10px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .note-card-bottom {
   margin-top: auto;
@@ -1641,7 +1637,7 @@ body {min-height:100dvh;} h1,h2,h3 {text-wrap:balance;} p {text-wrap:pretty;}
 .toolbar-row {flex-wrap:wrap;}.toolbar-tools {flex:1;min-width:250px;justify-content:flex-end;}.search-box {width:auto;max-width:320px;flex:1;}
 .nav-item.selected,.view-tabs button.active {background:#f2dce4;color:#794052;}
 .notes-grid,.pinned-grid {grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));}
-.note-card {width:100%;min-width:0;aspect-ratio:1.15;min-height:260px;max-height:360px;padding:22px 20px 18px;border-radius:3px 3px 22px 3px;border-color:#ead1da;box-shadow:1px 5px 9px #793f5210;background:#fcedf2;} .note-card h3 {overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.note-card {width:100%;min-width:0;aspect-ratio:1.15;min-height:260px;max-height:360px;padding:22px 20px 18px;border-radius:3px 3px 22px 3px;border-color:#ead1da;box-shadow:1px 5px 9px #793f5210;background:#fcedf2;} .note-card h3 {overflow-wrap:anywhere;}
 .note-card::before {height:32px;background:#eec9d661;border-bottom:1px solid #d79aaa22;pointer-events:none;}
 .note-card::after {content:"";position:absolute;right:0;bottom:0;width:19px;height:19px;background:#e6b5c5;clip-path:polygon(100% 0,100% 100%,0 100%);pointer-events:none;}
 .note-card:hover {box-shadow:1px 7px 12px #793f5218;}
@@ -1649,7 +1645,7 @@ body {min-height:100dvh;} h1,h2,h3 {text-wrap:balance;} p {text-wrap:pretty;}
 .note-card-actions {display:flex;gap:5px;flex-shrink:0;}.copy-note-button {color:#9b6679;}.copy-note-button.is-copied {color:#794052;background:#eec9d6;}
 .note-copy-status {display:block;min-height:14px;margin-top:6px;font-size:10px;line-height:1.4;color:#794052;}
 .note-title-button {font:inherit;color:inherit;background:transparent;text-align:left;padding:0;}
-.note-card p {white-space:pre-wrap;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
+.note-card p {white-space:pre-wrap;overflow-wrap:anywhere;}
 .note-tags {flex-wrap:wrap;}.note-tags span {max-width:100%;overflow-wrap:anywhere;}
 .backup-actions {display:flex;flex-direction:column;gap:6px;margin:14px 0;}.backup-actions button {justify-content:flex-start;font-size:11px;}
 .flow-navigation .nav-item {font-size:11px;}.flow-navigation .nav-count {font-variant-numeric:tabular-nums;}
